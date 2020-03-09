@@ -1,6 +1,17 @@
 ---
 layout: default
 ---
+{ 		<h1>{{ collectiondata.title }}</h1>
+
+			{{ collectiondata.description | markdownify }}
+
+    </article>
+
+    {% include post-list.html %}
+
+  </div>
+
+</main>
 
 # Tips To Attract Latina Women
 
@@ -96,27 +107,5 @@ The person's body language lets you know what that person is thinking and even w
 -You should take care of the expressions you make with your body, such as getting tangled up when talking or making some parts of your body shake like your hands and feet. Because this will show that you are unsure of the things you are saying. Latin women love a man who is sure of the things he says as this allows them to be more confident about the person with whom they will be initiating a relationship.
 - Have a sense of humor, you should look for the happy way
 Finally, we find one of the qualities that most Latin women look for in men and that they have a good sense of humor. No person likes to be with someone bored and it is quite difficult to start a conversation with that person, if you like a girl, you must have different topics to be able to share with her and be able to make her express all feelings with you.
-
-
-{% include site-header.html %}
-
-<main class="main  container">
-
-	<div class="content">
-
-    <article class="article  article--page  typeset">
-
-			{% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
-			<h1>{{ collectiondata.title }}</h1>
-
-			{{ collectiondata.description | markdownify }}
-
-    </article>
-
-    {% include post-list.html %}
-
-  </div>
-
-</main>
 
 {% include site-footer.html %}
